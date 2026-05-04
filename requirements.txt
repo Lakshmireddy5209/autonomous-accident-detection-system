@@ -1,0 +1,12 @@
+# Core runtime dependencies
+python-dotenv>=1.0.0
+pyserial>=3.5
+
+# I2C support – Linux / Raspberry Pi only
+smbus2>=0.4.3; sys_platform == "linux"
+
+# SMS notifications (optional – only needed when TWILIO_* vars are configured)
+twilio>=8.0.0
+
+# Testing
+pytest>=7.0.0
